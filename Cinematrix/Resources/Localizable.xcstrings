@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "**%@** / 10" : {
+
+    },
     "errorTitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -23,6 +26,17 @@
         }
       }
     },
+    "genresSection" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genres:"
+          }
+        }
+      }
+    },
     "Key" : {
       "extractionState" : "manual"
     },
@@ -39,6 +53,20 @@
     },
     "Popular Movies" : {
 
+    },
+    "retryButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        }
+      }
+    },
+    "retyButton" : {
+      "comment" : "Retry"
     },
     "tapToReload" : {
       "comment" : "Action to reload data",

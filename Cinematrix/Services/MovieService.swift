@@ -52,7 +52,7 @@ final class MovieService: MovieProvider {
                     #keyPath(Movie.overview): item.overview,
                     #keyPath(Movie.title): item.title,
                     #keyPath(Movie.order): order,
-                    #keyPath(Movie.posterURL): client.imageBaseURL.appendingPathComponent(item.posterPath).absoluteString,
+                    #keyPath(Movie.posterURL): client.imageBaseURL.appendingPathComponent("w300").appendingPathComponent(item.posterPath).absoluteString,
                     #keyPath(Movie.voteAverage): item.voteAverage]}
         
         let addedIDs = try await respository.batch(eventsDic)

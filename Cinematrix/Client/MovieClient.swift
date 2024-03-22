@@ -10,6 +10,7 @@ import Foundation
 protocol MovieClient: AnyObject {
     var imageBaseURL:  URL { get }
     func popularMovies(_ page: Int, size: Int) async throws -> MovieResponseDTO
+    func movieDetails(_ id: Int) async throws -> MovieDetailsResponseDTO
 }
 
 final class MovieNetworkClient: MovieClient {
@@ -27,7 +28,7 @@ final class MovieNetworkClient: MovieClient {
             preconditionFailure("Unable find API key")
         }
         guard let imageURL = Bundle.main.infoDictionary?["MOVIE_IMAGE_BASE_URL"] as? String,
-              let imageBaseURL = URL(string: "\(imageURL)/w300") else {
+              let imageBaseURL = URL(string: "\(imageURL)") else {
             preconditionFailure("Unable to build URL")
         }
         self.apiKey = key
@@ -37,6 +38,10 @@ final class MovieNetworkClient: MovieClient {
     
     func popularMovies(_ page: Int, size: Int) async throws -> MovieResponseDTO {
         return try await get(.popularMovies, params: [.init(key: .page, value: String(page)), .init(key: .size, value: String(size))])
+    }
+    
+    func movieDetails(_ id: Int) async throws -> MovieDetailsResponseDTO {
+        return try await get(.moveDetail(id: id))
     }
     
     private func get<T: Codable>(_ path: Paths, params: [MovieNetworkClient.QueryItem] = []) async throws -> T {

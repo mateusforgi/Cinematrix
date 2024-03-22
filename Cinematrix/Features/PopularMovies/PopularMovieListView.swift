@@ -83,7 +83,11 @@ struct PopularMovieListView: View {
                             GridItem(.fixed(width), spacing: 0)],
                   alignment: .center, spacing: spacing) {
             ForEach(items, id: \.id) { movie in
-                PopularMovieCell(summary: .init(movie), width: width)
+                NavigationLink {
+                    MovieDetailsView(id: movie.id)
+                } label: {
+                    PopularMovieCell(summary: .init(movie), width: width)
+                }
             }
         }
     }
