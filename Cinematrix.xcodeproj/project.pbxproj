@@ -9,13 +9,33 @@
 /* Begin PBXBuildFile section */
 		273AA60F2BADCEF500385317 /* CinematrixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AA60E2BADCEF500385317 /* CinematrixApp.swift */; };
 		273AA6112BADCEF500385317 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AA6102BADCEF500385317 /* Persistence.swift */; };
-		273AA6142BADCEF500385317 /* Cinematrix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 273AA6122BADCEF500385317 /* Cinematrix.xcdatamodeld */; };
-		273AA6162BADCEF500385317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AA6152BADCEF500385317 /* ContentView.swift */; };
 		273AA6182BADCEF600385317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273AA6172BADCEF600385317 /* Assets.xcassets */; };
 		273AA61C2BADCEF600385317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273AA61B2BADCEF600385317 /* Preview Assets.xcassets */; };
 		273AA6262BADCEF600385317 /* CinematrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AA6252BADCEF600385317 /* CinematrixTests.swift */; };
 		273AA6302BADCEF600385317 /* CinematrixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AA62F2BADCEF600385317 /* CinematrixUITests.swift */; };
 		273AA6322BADCEF600385317 /* CinematrixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273AA6312BADCEF600385317 /* CinematrixUITestsLaunchTests.swift */; };
+		27C9BA682BADD8780068E9A4 /* MovieResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA672BADD8780068E9A4 /* MovieResponseDTO.swift */; };
+		27C9BA6D2BADD88A0068E9A4 /* MovieSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA6C2BADD88A0068E9A4 /* MovieSummary.swift */; };
+		27C9BA702BADD8B50068E9A4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA6E2BADD8B50068E9A4 /* NetworkClient.swift */; };
+		27C9BA712BADD8B50068E9A4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA6F2BADD8B50068E9A4 /* NetworkManager.swift */; };
+		27C9BA742BADDA0E0068E9A4 /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA732BADDA0E0068E9A4 /* MovieClient.swift */; };
+		27C9BA762BADDBA00068E9A4 /* ErrorResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA752BADDBA00068E9A4 /* ErrorResponseDTO.swift */; };
+		27C9BA782BADDBEA0068E9A4 /* PopularMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA772BADDBEA0068E9A4 /* PopularMovieCell.swift */; };
+		27C9BA7B2BADDC1F0068E9A4 /* PopularMovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA792BADDC1F0068E9A4 /* PopularMovieListView.swift */; };
+		27C9BA7C2BADDC1F0068E9A4 /* PopularMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA7A2BADDC1F0068E9A4 /* PopularMoviesViewModel.swift */; };
+		27C9BA7F2BADDC7A0068E9A4 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 27C9BA7E2BADDC7A0068E9A4 /* Nuke */; };
+		27C9BA812BADDC7A0068E9A4 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27C9BA802BADDC7A0068E9A4 /* NukeUI */; };
+		27C9BA872BADDCA80068E9A4 /* LazyImageWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA842BADDCA80068E9A4 /* LazyImageWrapperView.swift */; };
+		27C9BA882BADDCA80068E9A4 /* PositionObservingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA852BADDCA80068E9A4 /* PositionObservingView.swift */; };
+		27C9BA8B2BADDCE10068E9A4 /* LozalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA8A2BADDCE10068E9A4 /* LozalizableStrings.swift */; };
+		27C9BA8E2BADDD590068E9A4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27C9BA8D2BADDD590068E9A4 /* Localizable.xcstrings */; };
+		27C9BA922BADF0CC0068E9A4 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA912BADF0CC0068E9A4 /* BaseRepository.swift */; };
+		27C9BA942BADF0D40068E9A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA932BADF0D40068E9A4 /* Movie.swift */; };
+		27C9BA962BADF1AC0068E9A4 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA952BADF1AC0068E9A4 /* MovieRepository.swift */; };
+		27C9BA992BADF81B0068E9A4 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA982BADF81B0068E9A4 /* MovieService.swift */; };
+		27C9BA9F2BAE02EF0068E9A4 /* MovieListMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BA9E2BAE02EF0068E9A4 /* MovieListMetaData.swift */; };
+		27C9BAA12BAE048E0068E9A4 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BAA02BAE048E0068E9A4 /* UserDefaultWrapper.swift */; };
+		27C9BAA42BAE090B0068E9A4 /* Cinematrix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BAA22BAE090B0068E9A4 /* Cinematrix.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +59,6 @@
 		273AA60B2BADCEF500385317 /* Cinematrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinematrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273AA60E2BADCEF500385317 /* CinematrixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinematrixApp.swift; sourceTree = "<group>"; };
 		273AA6102BADCEF500385317 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		273AA6132BADCEF500385317 /* Cinematrix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinematrix.xcdatamodel; sourceTree = "<group>"; };
-		273AA6152BADCEF500385317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		273AA6172BADCEF600385317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		273AA6192BADCEF600385317 /* Cinematrix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cinematrix.entitlements; sourceTree = "<group>"; };
 		273AA61B2BADCEF600385317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +67,27 @@
 		273AA62B2BADCEF600385317 /* CinematrixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinematrixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		273AA62F2BADCEF600385317 /* CinematrixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinematrixUITests.swift; sourceTree = "<group>"; };
 		273AA6312BADCEF600385317 /* CinematrixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinematrixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27C9BA672BADD8780068E9A4 /* MovieResponseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieResponseDTO.swift; sourceTree = "<group>"; };
+		27C9BA6C2BADD88A0068E9A4 /* MovieSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSummary.swift; sourceTree = "<group>"; };
+		27C9BA6E2BADD8B50068E9A4 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		27C9BA6F2BADD8B50068E9A4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		27C9BA732BADDA0E0068E9A4 /* MovieClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClient.swift; sourceTree = "<group>"; };
+		27C9BA752BADDBA00068E9A4 /* ErrorResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseDTO.swift; sourceTree = "<group>"; };
+		27C9BA772BADDBEA0068E9A4 /* PopularMovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMovieCell.swift; sourceTree = "<group>"; };
+		27C9BA792BADDC1F0068E9A4 /* PopularMovieListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMovieListView.swift; sourceTree = "<group>"; };
+		27C9BA7A2BADDC1F0068E9A4 /* PopularMoviesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMoviesViewModel.swift; sourceTree = "<group>"; };
+		27C9BA842BADDCA80068E9A4 /* LazyImageWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyImageWrapperView.swift; sourceTree = "<group>"; };
+		27C9BA852BADDCA80068E9A4 /* PositionObservingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionObservingView.swift; sourceTree = "<group>"; };
+		27C9BA8A2BADDCE10068E9A4 /* LozalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LozalizableStrings.swift; sourceTree = "<group>"; };
+		27C9BA8D2BADDD590068E9A4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		27C9BA8F2BADE07F0068E9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		27C9BA912BADF0CC0068E9A4 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		27C9BA932BADF0D40068E9A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		27C9BA952BADF1AC0068E9A4 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		27C9BA982BADF81B0068E9A4 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		27C9BA9E2BAE02EF0068E9A4 /* MovieListMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListMetaData.swift; sourceTree = "<group>"; };
+		27C9BAA02BAE048E0068E9A4 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
+		27C9BAA32BAE090B0068E9A4 /* Cinematrix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinematrix.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C9BA7F2BADDC7A0068E9A4 /* Nuke in Frameworks */,
+				27C9BA812BADDC7A0068E9A4 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +140,18 @@
 		273AA60D2BADCEF500385317 /* Cinematrix */ = {
 			isa = PBXGroup;
 			children = (
+				27C9BA972BADF7DE0068E9A4 /* Services */,
+				27C9BA902BADF0BB0068E9A4 /* CoreData */,
+				27C9BA8F2BADE07F0068E9A4 /* Info.plist */,
+				27C9BA8C2BADDD470068E9A4 /* Resources */,
+				27C9BA892BADDCDA0068E9A4 /* Utils */,
+				27C9BA822BADDC910068E9A4 /* Components */,
+				27C9BA6B2BADD88A0068E9A4 /* Models */,
+				27C9BA692BADD8820068E9A4 /* Features */,
+				27C9BA652BADD8780068E9A4 /* Client */,
 				273AA60E2BADCEF500385317 /* CinematrixApp.swift */,
 				273AA6102BADCEF500385317 /* Persistence.swift */,
-				273AA6152BADCEF500385317 /* ContentView.swift */,
-				273AA6172BADCEF600385317 /* Assets.xcassets */,
 				273AA6192BADCEF600385317 /* Cinematrix.entitlements */,
-				273AA6122BADCEF500385317 /* Cinematrix.xcdatamodeld */,
 				273AA61A2BADCEF600385317 /* Preview Content */,
 			);
 			path = Cinematrix;
@@ -135,6 +182,99 @@
 			path = CinematrixUITests;
 			sourceTree = "<group>";
 		};
+		27C9BA652BADD8780068E9A4 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA6E2BADD8B50068E9A4 /* NetworkClient.swift */,
+				27C9BA732BADDA0E0068E9A4 /* MovieClient.swift */,
+				27C9BA6F2BADD8B50068E9A4 /* NetworkManager.swift */,
+				27C9BA662BADD8780068E9A4 /* DTOs */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		27C9BA662BADD8780068E9A4 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA672BADD8780068E9A4 /* MovieResponseDTO.swift */,
+				27C9BA752BADDBA00068E9A4 /* ErrorResponseDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		27C9BA692BADD8820068E9A4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA6A2BADD8820068E9A4 /* PopularMovies */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		27C9BA6A2BADD8820068E9A4 /* PopularMovies */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA9E2BAE02EF0068E9A4 /* MovieListMetaData.swift */,
+				27C9BA772BADDBEA0068E9A4 /* PopularMovieCell.swift */,
+				27C9BA792BADDC1F0068E9A4 /* PopularMovieListView.swift */,
+				27C9BA7A2BADDC1F0068E9A4 /* PopularMoviesViewModel.swift */,
+			);
+			path = PopularMovies;
+			sourceTree = "<group>";
+		};
+		27C9BA6B2BADD88A0068E9A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA6C2BADD88A0068E9A4 /* MovieSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27C9BA822BADDC910068E9A4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA842BADDCA80068E9A4 /* LazyImageWrapperView.swift */,
+				27C9BA852BADDCA80068E9A4 /* PositionObservingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27C9BA892BADDCDA0068E9A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA8A2BADDCE10068E9A4 /* LozalizableStrings.swift */,
+				27C9BAA02BAE048E0068E9A4 /* UserDefaultWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		27C9BA8C2BADDD470068E9A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				273AA6172BADCEF600385317 /* Assets.xcassets */,
+				27C9BA8D2BADDD590068E9A4 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27C9BA902BADF0BB0068E9A4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BAA22BAE090B0068E9A4 /* Cinematrix.xcdatamodeld */,
+				27C9BA912BADF0CC0068E9A4 /* BaseRepository.swift */,
+				27C9BA932BADF0D40068E9A4 /* Movie.swift */,
+				27C9BA952BADF1AC0068E9A4 /* MovieRepository.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		27C9BA972BADF7DE0068E9A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BA982BADF81B0068E9A4 /* MovieService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +291,10 @@
 			dependencies = (
 			);
 			name = Cinematrix;
+			packageProductDependencies = (
+				27C9BA7E2BADDC7A0068E9A4 /* Nuke */,
+				27C9BA802BADDC7A0068E9A4 /* NukeUI */,
+			);
 			productName = Cinematrix;
 			productReference = 273AA60B2BADCEF500385317 /* Cinematrix.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +367,9 @@
 				Base,
 			);
 			mainGroup = 273AA6022BADCEF500385317;
+			packageReferences = (
+				27C9BA7D2BADDC7A0068E9A4 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 273AA60C2BADCEF500385317 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +388,7 @@
 			files = (
 				273AA61C2BADCEF600385317 /* Preview Assets.xcassets in Resources */,
 				273AA6182BADCEF600385317 /* Assets.xcassets in Resources */,
+				27C9BA8E2BADDD590068E9A4 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +413,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C9BA682BADD8780068E9A4 /* MovieResponseDTO.swift in Sources */,
+				27C9BA742BADDA0E0068E9A4 /* MovieClient.swift in Sources */,
+				27C9BA9F2BAE02EF0068E9A4 /* MovieListMetaData.swift in Sources */,
+				27C9BA942BADF0D40068E9A4 /* Movie.swift in Sources */,
+				27C9BA702BADD8B50068E9A4 /* NetworkClient.swift in Sources */,
+				27C9BA7B2BADDC1F0068E9A4 /* PopularMovieListView.swift in Sources */,
+				27C9BA762BADDBA00068E9A4 /* ErrorResponseDTO.swift in Sources */,
+				27C9BA882BADDCA80068E9A4 /* PositionObservingView.swift in Sources */,
+				27C9BA8B2BADDCE10068E9A4 /* LozalizableStrings.swift in Sources */,
+				27C9BA962BADF1AC0068E9A4 /* MovieRepository.swift in Sources */,
+				27C9BA922BADF0CC0068E9A4 /* BaseRepository.swift in Sources */,
+				27C9BA872BADDCA80068E9A4 /* LazyImageWrapperView.swift in Sources */,
+				27C9BA7C2BADDC1F0068E9A4 /* PopularMoviesViewModel.swift in Sources */,
 				273AA60F2BADCEF500385317 /* CinematrixApp.swift in Sources */,
+				27C9BAA42BAE090B0068E9A4 /* Cinematrix.xcdatamodeld in Sources */,
 				273AA6112BADCEF500385317 /* Persistence.swift in Sources */,
-				273AA6162BADCEF500385317 /* ContentView.swift in Sources */,
-				273AA6142BADCEF500385317 /* Cinematrix.xcdatamodeld in Sources */,
+				27C9BA992BADF81B0068E9A4 /* MovieService.swift in Sources */,
+				27C9BAA12BAE048E0068E9A4 /* UserDefaultWrapper.swift in Sources */,
+				27C9BA782BADDBEA0068E9A4 /* PopularMovieCell.swift in Sources */,
+				27C9BA712BADD8B50068E9A4 /* NetworkManager.swift in Sources */,
+				27C9BA6D2BADD88A0068E9A4 /* MovieSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +595,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cinematrix/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cinematrix/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -445,6 +611,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
+				MOVIE_API_KEY = bf718d4dd8b23985d9c3edbcfd440a27;
+				MOVIE_BASE_URL = "https://api.themoviedb.org/3/";
+				MOVIE_IMAGE_BASE_URL = "https://image.tmdb.org/t/p";
 				PRODUCT_BUNDLE_IDENTIFIER = "-324.Cinematrix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -466,6 +635,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cinematrix/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cinematrix/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -481,6 +651,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
+				MOVIE_API_KEY = bf718d4dd8b23985d9c3edbcfd440a27;
+				MOVIE_BASE_URL = "https://api.themoviedb.org/3/";
+				MOVIE_IMAGE_BASE_URL = "https://image.tmdb.org/t/p";
 				PRODUCT_BUNDLE_IDENTIFIER = "-324.Cinematrix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -618,13 +791,37 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		27C9BA7D2BADDC7A0068E9A4 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27C9BA7E2BADDC7A0068E9A4 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27C9BA7D2BADDC7A0068E9A4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		27C9BA802BADDC7A0068E9A4 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27C9BA7D2BADDC7A0068E9A4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		273AA6122BADCEF500385317 /* Cinematrix.xcdatamodeld */ = {
+		27C9BAA22BAE090B0068E9A4 /* Cinematrix.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				273AA6132BADCEF500385317 /* Cinematrix.xcdatamodel */,
+				27C9BAA32BAE090B0068E9A4 /* Cinematrix.xcdatamodel */,
 			);
-			currentVersion = 273AA6132BADCEF500385317 /* Cinematrix.xcdatamodel */;
+			currentVersion = 27C9BAA32BAE090B0068E9A4 /* Cinematrix.xcdatamodel */;
 			path = Cinematrix.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

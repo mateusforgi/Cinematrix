@@ -26,6 +26,14 @@ struct MovieSummary: Identifiable {
         self.thumbnailURL = imageBaseURL.appendingPathComponent(movie.posterPath)
     }
     
+    init(_ movie: Movie) {
+        self.id = movie.id
+        self.overview = movie.overview
+        self.title = movie.title
+        self.voteAverage = movie.voteAverage
+        self.thumbnailURL = URL(string: movie.posterURL)!
+    }
+    
     internal init(id: Int, overview: String, title: String, voteAverage: Double, thumbnailURL: URL) {
         self.id = id
         self.overview = overview

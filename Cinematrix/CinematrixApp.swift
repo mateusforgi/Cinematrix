@@ -13,8 +13,10 @@ struct CinematrixApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationStack {
+                PopularMovieListView()
+                    .environment(\.managedObjectContext, persistenceController.viewContext)
+            }
         }
     }
 }

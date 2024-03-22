@@ -1,0 +1,56 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "errorTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Error"
+          }
+        }
+      }
+    },
+    "fetching" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fetching Data"
+          }
+        }
+      }
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "ok" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "Popular Movies" : {
+
+    },
+    "tapToReload" : {
+      "comment" : "Action to reload data",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to reload image"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

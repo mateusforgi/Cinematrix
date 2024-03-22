@@ -9,7 +9,7 @@ import Foundation
 
 protocol MovieClient: AnyObject {
     var imageBaseURL:  URL { get }
-    func popularMovies(_ page: Int) async throws -> MovieResponseDTO
+    func popularMovies(_ page: Int, size: Int) async throws -> MovieResponseDTO
 }
 
 final class MovieNetworkClient: MovieClient {
@@ -35,8 +35,8 @@ final class MovieNetworkClient: MovieClient {
         self.imageBaseURL = imageBaseURL
     }
     
-    func popularMovies(_ page: Int) async throws -> MovieResponseDTO {
-        return try await get(.popularMovies, params: [.init(key: .page, value: String(page)), .init(key: .size, value: String(10))])
+    func popularMovies(_ page: Int, size: Int) async throws -> MovieResponseDTO {
+        return try await get(.popularMovies, params: [.init(key: .page, value: String(page)), .init(key: .size, value: String(size))])
     }
     
     private func get<T: Codable>(_ path: Paths, params: [MovieNetworkClient.QueryItem] = []) async throws -> T {
