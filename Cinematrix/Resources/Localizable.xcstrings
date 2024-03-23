@@ -4,6 +4,17 @@
     "**%@** / 10" : {
 
     },
+    "cast" : {
+      "comment" : "The cast section header",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cast"
+          }
+        }
+      }
+    },
     "errorTitle" : {
       "extractionState" : "manual",
       "localizations" : {

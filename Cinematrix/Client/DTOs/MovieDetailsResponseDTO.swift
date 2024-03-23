@@ -16,8 +16,9 @@ struct MovieDetailsResponseDTO: Codable {
 	let tagline: String
 	let title: String
 	let voteAverage: Double
-    let credits: [Credits]
-	
+    let credits: Credits
+    let images: MovieDetailsResponseDTO.Images
+
 	enum CodingKeys: String, CodingKey {
 		case genres
 		case id
@@ -28,6 +29,7 @@ struct MovieDetailsResponseDTO: Codable {
 		case title
 		case voteAverage = "vote_average"
         case credits
+        case images
 	}
 	
 	struct Genre: Codable {
@@ -37,31 +39,35 @@ struct MovieDetailsResponseDTO: Codable {
 
 extension MovieDetailsResponseDTO {
     struct CastMember: Codable {
-        let adult: Bool
-        let gender: Int
         let id: Int
-        let knownForDepartment: String
         let name: String
-        let originalName: String
-        let popularity: Double
         let profilePath: String?
-        let castId: Int
         let character: String
-        let creditId: String
         let order: Int
 
         enum CodingKeys: String, CodingKey {
-            case adult, gender, id, name, popularity, character, order
-            case knownForDepartment = "known_for_department"
-            case originalName = "original_name"
+            case id, name, character, order
             case profilePath = "profile_path"
-            case castId = "cast_id"
-            case creditId = "credit_id"
         }
     }
 
     struct Credits: Codable {
         let cast: [CastMember]
     }
+    
+    struct Backdrops: Codable {
+        let aspectRatio: Double
+        let filePath: String
+        let iso6391: String?
 
+        enum CodingKeys: String, CodingKey {
+            case aspectRatio = "aspect_ratio"
+            case filePath = "file_path"
+            case iso6391 = "iso_639_1"
+        }
+    }
+
+    struct Images: Codable {
+        let backdrops: [Backdrops]
+    }
 }

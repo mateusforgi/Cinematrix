@@ -41,7 +41,7 @@ final class MovieNetworkClient: MovieClient {
     }
     
     func movieDetails(_ id: Int) async throws -> MovieDetailsResponseDTO {
-        return try await get(.moveDetail(id: id))
+        return try await get(.moveDetail(id: id), params: [.init(key: .appendToResponse, value: "credits,images")])
     }
     
     private func get<T: Codable>(_ path: Paths, params: [MovieNetworkClient.QueryItem] = []) async throws -> T {
@@ -82,6 +82,7 @@ extension MovieNetworkClient {
         case page
         case api_key
         case size
+        case appendToResponse = "append_to_response"
     }
     
     enum Paths {
