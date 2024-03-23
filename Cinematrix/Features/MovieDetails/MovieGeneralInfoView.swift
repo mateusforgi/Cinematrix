@@ -12,8 +12,14 @@ struct MovieGeneralInfoView: View {
     let movie: MovieDetails
     
     var body: some View {
-        
         VStack(alignment: .leading, spacing: 10) {
+            HStack(alignment: .bottom, spacing: 5) {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+                Text("**\(String(format: "%.1f", movie.voteAverage))** / 10")
+                Spacer()
+            }
+            
             Text(movie.overview)
                 .font(.system(size: 14, weight: .regular))
                 .multilineTextAlignment(.leading)

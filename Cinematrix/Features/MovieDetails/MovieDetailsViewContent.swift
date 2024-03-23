@@ -15,12 +15,11 @@ struct MovieDetailsViewContent: View {
             ScrollView {
                 VStack {
                     MovieBackdropsView(movie: movie, width: proxy.size.width)
-                
-                    MovieCastListView(cast: movie.cast)
-
+                    
                     MovieGeneralInfoView(movie: movie)
+                    
+                    MovieCastListView(cast: movie.cast)
                 }
-                
             }.navigationTitle(movie.title)
                 .navigationBarTitleDisplayMode(.inline)
         }

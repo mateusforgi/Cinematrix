@@ -22,20 +22,6 @@ struct MovieBackdropsView: View {
             }
             .tabViewStyle(.page(indexDisplayMode: .always)) // Step 11: Customize TabView Style
             .frame(width: width, height: width / (movie.backdrops.first?.aspectRatio ?? 1.5))
-            
-            VStack {
-                HStack(alignment: .bottom, spacing: 5) {
-                    Spacer()
-                    
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    
-                    Text("**\(String(format: "%.1f", movie.voteAverage))** / 10")
-                    
-                }.foregroundColor(.white)
-                
-                Spacer()
-            }.padding()
         }
     }
 }

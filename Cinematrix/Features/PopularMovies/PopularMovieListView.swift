@@ -48,7 +48,7 @@ struct PopularMovieListView: View {
                 viewModel.error = nil
             }))
         })
-        .navigationTitle("Popular Movies")
+        .navigationTitle(LocalizableStrings.popularMoviesHeader)
     }
     
     func handlePositionUpdate(_ newValue: ScrollPositionValue, viewHeight: CGFloat) {

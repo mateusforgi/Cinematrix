@@ -62,8 +62,19 @@
         }
       }
     },
-    "Popular Movies" : {
-
+    "popularMoviesHeader" : {
+      "comment" : "The Popular Movies header list",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular Movies"
+          }
+        }
+      }
+    },
+    "popularMoviewsHeader" : {
+      "extractionState" : "manual"
     },
     "retryButton" : {
       "extractionState" : "manual",
@@ -75,9 +86,6 @@
           }
         }
       }
-    },
-    "retyButton" : {
-      "comment" : "Retry"
     },
     "tapToReload" : {
       "comment" : "Action to reload data",
