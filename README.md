@@ -10,6 +10,9 @@ To run the project, open TinyBeans.xcodeproj and execute it on the iOS Simulator
 ## Features
 The app allows users to see popular movies using the [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started). Upon opening the app, it initially displays a list of popular movies. The list is paginated, with new pages loading as the user scrolls. By clicking on a movie the user can see the movie details.
 
+## Dark Mode
+We support dark mode :)
+
 ## Architecture
 We adopt the MVVM architecture. For networking and storage, we utilize repositories, clients, providers and services.
 
