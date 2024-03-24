@@ -21,19 +21,17 @@ final class MovieDetailsViewModel: ObservableObject {
 		self.id = id
 	}
 	
-	func getMovie() {
+	func getMovie() async {
 		guard state != .loading else {
 			return
 		}
 		state = .loading
-		Task {
-			do {
-				let movie = try await client.movieDetails(id)
-                state = .success(movie: .init(movie, imageBaseURL: client.imageBaseURL))
-			} catch {
-				state = .error(error: error)
-			}
-		}
+        do {
+            let movie = try await client.movieDetails(id)
+            state = .success(movie: .init(movie, imageBaseURL: client.imageBaseURL))
+        } catch {
+            state = .error(error: error)
+        }
 	}
 }
 

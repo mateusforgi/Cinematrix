@@ -15,7 +15,7 @@ final class PopularMoviesViewModel: ObservableObject {
 	@Published var refreshing: Bool = false
 
 	private let provider: MovieProvider
-    private var metadata: MovieListMetaData = .init(lastPage: 0, totalPages: 0)
+    private (set) var metadata: MovieListMetaData = .init(lastPage: 0, totalPages: 0)
 	private var fetchTask: Task<(), Never>?
     private let pageSize: Int
 	
@@ -25,12 +25,13 @@ final class PopularMoviesViewModel: ObservableObject {
         listInitialization()
 	}
     
-    func listInitialization() {
-        Task {
-            if let metadata: MovieListMetaData = try? UserDefaultWrapper.get(.movieListMetaData) {
-                self.metadata = metadata
+    private func listInitialization() {
+        if let metadata: MovieListMetaData = try? UserDefaultWrapper.get(.movieListMetaData) {
+            self.metadata = metadata
+        } else {
+            Task {
+                await fetchMore()
             }
-            await fetchMore()
         }
     }
 	

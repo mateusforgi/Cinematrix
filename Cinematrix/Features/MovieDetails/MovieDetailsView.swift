@@ -26,14 +26,18 @@ struct MovieDetailsView: View {
 					Text(LocalizableStrings.errorTitle)
 					Text(error.localizedDescription)
 					Button(LocalizableStrings.retryButton) {
-						viewModel.getMovie()
+                        Task {
+                            await viewModel.getMovie()
+                        }
 					}
 				}
 			case .none:
 				EmptyView()
 			}
 		}.onAppear {
-			viewModel.getMovie()
+            Task {
+                await viewModel.getMovie()
+            }
 		}
 	}
 }
