@@ -34,10 +34,11 @@ struct MovieGeneralInfoView: View {
                 LazyHGrid(rows: [.init(.adaptive(minimum: 50, maximum: 100), spacing: 10)], alignment: .top, spacing: 10) {
                     ForEach(movie.genres, id: \.self) { genre in
                         BorderedText(text: genre, borderWidth: 1)
+                            .padding([.top, .bottom])
                     }
                 }
             }
-        }.padding()
+        }
     }
 }
 

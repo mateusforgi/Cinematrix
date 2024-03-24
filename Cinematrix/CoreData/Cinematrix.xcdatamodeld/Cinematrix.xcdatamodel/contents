@@ -4,7 +4,7 @@
         <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="order" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="overview" attributeType="String" defaultValueString=""/>
-        <attribute name="posterURL" attributeType="String" defaultValueString=""/>
+        <attribute name="posterPath" attributeType="String" defaultValueString=""/>
         <attribute name="title" attributeType="String" defaultValueString=""/>
         <attribute name="voteAverage" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <uniquenessConstraints>

@@ -9,15 +9,19 @@ import Foundation
 import CoreData
 
 protocol MovieProvider {
+    var imageBaseURL:  URL { get }
     func fetch(page: Int, pageSize: Int, deleteCache: Bool) async throws -> Int
 }
 
 final class MovieService: MovieProvider {
+    var imageBaseURL: URL {
+        client.imageBaseURL
+    }
     let respository: MovieStorage
     let client: MovieClient
     let notifyOn: NSManagedObjectContext
     
-    init(respository: MovieStorage = MovieRepository(context: PersistenceController.shared.nextbackgroundContext()),
+    init(respository: MovieStorage = MovieRepository(context: PersistenceController.shared.newBackgroundContext()),
          client: MovieClient = MovieNetworkClient(),
          notifyOn: NSManagedObjectContext = PersistenceController.shared.viewContext) {
         self.respository = respository
@@ -52,7 +56,7 @@ final class MovieService: MovieProvider {
                     #keyPath(Movie.overview): item.overview,
                     #keyPath(Movie.title): item.title,
                     #keyPath(Movie.order): order,
-                    #keyPath(Movie.posterURL): client.imageBaseURL.appendingPathComponent("w300").appendingPathComponent(item.posterPath).absoluteString,
+                    #keyPath(Movie.posterPath): item.posterPath,
                     #keyPath(Movie.voteAverage): item.voteAverage]}
         
         let addedIDs = try await respository.batch(eventsDic)

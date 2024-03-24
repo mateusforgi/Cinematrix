@@ -45,6 +45,7 @@
 		27C9BAB52BAE41B70068E9A4 /* MovieCastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BAB42BAE41B70068E9A4 /* MovieCastListView.swift */; };
 		27C9BAB72BAF323B0068E9A4 /* MovieBackdropsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BAB62BAF323B0068E9A4 /* MovieBackdropsView.swift */; };
 		27C9BAB92BAF33330068E9A4 /* MovieGeneralInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BAB82BAF33330068E9A4 /* MovieGeneralInfoView.swift */; };
+		27C9BAC12BB077EF0068E9A4 /* PopularMoviesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9BAC02BB077EE0068E9A4 /* PopularMoviesViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		27C9BAB42BAE41B70068E9A4 /* MovieCastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastListView.swift; sourceTree = "<group>"; };
 		27C9BAB62BAF323B0068E9A4 /* MovieBackdropsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropsView.swift; sourceTree = "<group>"; };
 		27C9BAB82BAF33330068E9A4 /* MovieGeneralInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGeneralInfoView.swift; sourceTree = "<group>"; };
+		27C9BAC02BB077EE0068E9A4 /* PopularMoviesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		273AA6242BADCEF600385317 /* CinematrixTests */ = {
 			isa = PBXGroup;
 			children = (
+				27C9BABE2BB077D80068E9A4 /* Features */,
 				273AA6252BADCEF600385317 /* CinematrixTests.swift */,
 			);
 			path = CinematrixTests;
@@ -233,7 +236,6 @@
 		27C9BA6A2BADD8820068E9A4 /* PopularMovies */ = {
 			isa = PBXGroup;
 			children = (
-				27C9BA9E2BAE02EF0068E9A4 /* MovieListMetaData.swift */,
 				27C9BA772BADDBEA0068E9A4 /* PopularMovieCell.swift */,
 				27C9BA792BADDC1F0068E9A4 /* PopularMovieListView.swift */,
 				27C9BA7A2BADDC1F0068E9A4 /* PopularMoviesViewModel.swift */,
@@ -244,6 +246,7 @@
 		27C9BA6B2BADD88A0068E9A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27C9BA9E2BAE02EF0068E9A4 /* MovieListMetaData.swift */,
 				27C9BAAE2BAE16940068E9A4 /* MovieDetails.swift */,
 				27C9BA6C2BADD88A0068E9A4 /* MovieSummary.swift */,
 			);
@@ -308,6 +311,22 @@
 				27C9BAB82BAF33330068E9A4 /* MovieGeneralInfoView.swift */,
 			);
 			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		27C9BABE2BB077D80068E9A4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BABF2BB077DD0068E9A4 /* PopularMovies */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		27C9BABF2BB077DD0068E9A4 /* PopularMovies */ = {
+			isa = PBXGroup;
+			children = (
+				27C9BAC02BB077EE0068E9A4 /* PopularMoviesViewModelTests.swift */,
+			);
+			path = PopularMovies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				273AA6262BADCEF600385317 /* CinematrixTests.swift in Sources */,
+				27C9BAC12BB077EF0068E9A4 /* PopularMoviesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,11 +666,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -661,10 +682,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-324.Cinematrix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -686,11 +708,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -701,10 +724,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-324.Cinematrix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

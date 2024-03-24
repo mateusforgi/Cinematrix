@@ -17,6 +17,7 @@ struct MovieDetailsViewContent: View {
                     MovieBackdropsView(movie: movie, width: proxy.size.width)
                     
                     MovieGeneralInfoView(movie: movie)
+                        .padding([.leading, .trailing])
                     
                     MovieCastListView(cast: movie.cast)
                 }

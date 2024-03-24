@@ -17,21 +17,13 @@ struct MovieSummary: Identifiable {
     var isPopular: Bool {
         voteAverage > 7.5
     }
-    
-    init(_ movie: MovieResponseDTO.Movie, imageBaseURL: URL) {
+
+    init(_ movie: Movie, imageBaseURL: URL) {
         self.id = movie.id
         self.overview = movie.overview
         self.title = movie.title
         self.voteAverage = movie.voteAverage
-        self.thumbnailURL = imageBaseURL.appendingPathComponent(movie.posterPath)
-    }
-    
-    init(_ movie: Movie) {
-        self.id = movie.id
-        self.overview = movie.overview
-        self.title = movie.title
-        self.voteAverage = movie.voteAverage
-        self.thumbnailURL = URL(string: movie.posterURL)!
+        self.thumbnailURL = imageBaseURL.appendingPathComponent("w185").appendingPathComponent(movie.posterPath)
     }
     
     internal init(id: Int, overview: String, title: String, voteAverage: Double, thumbnailURL: URL) {

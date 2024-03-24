@@ -32,7 +32,7 @@ struct PopularMovieListView: View {
                     loadingView
                 }
             }
-            .onChange(of: position, {
+            .onChange(of: position, perform: { newValue in
                 handlePositionUpdate(position, viewHeight: geometry.size.height)
             })
             .coordinateSpace(name: coordinateSpaceName)
@@ -86,7 +86,7 @@ struct PopularMovieListView: View {
                 NavigationLink {
                     MovieDetailsView(id: movie.id)
                 } label: {
-                    PopularMovieCell(summary: .init(movie), width: width)
+                    PopularMovieCell(summary: viewModel.parse(movie: movie), width: width)
                 }
             }
         }

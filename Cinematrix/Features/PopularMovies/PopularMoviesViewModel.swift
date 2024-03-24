@@ -72,4 +72,8 @@ final class PopularMoviesViewModel: ObservableObject {
 		
 		await fetchTask?.value
 	}
+    
+    func parse(movie: Movie) -> MovieSummary {
+        return .init(movie, imageBaseURL: provider.imageBaseURL)
+    }
 }

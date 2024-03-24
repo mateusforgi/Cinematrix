@@ -12,7 +12,7 @@ class Movie: NSManagedObject {
     @NSManaged var overview: String
     @NSManaged var id: Int
     @NSManaged var title: String
-    @NSManaged var posterURL: String
+    @NSManaged var posterPath: String
     @NSManaged var voteAverage: Double
     @NSManaged var order: Int
 }

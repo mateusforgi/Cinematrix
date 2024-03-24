@@ -29,7 +29,7 @@ final class MovieNetworkClient: MovieClient {
         }
         guard let imageURL = Bundle.main.infoDictionary?["MOVIE_IMAGE_BASE_URL"] as? String,
               let imageBaseURL = URL(string: "\(imageURL)") else {
-            preconditionFailure("Unable to build URL")
+            preconditionFailure("Unable to build Image URL")
         }
         self.apiKey = key
         self.baseUrl = url
