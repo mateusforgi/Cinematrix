@@ -26,7 +26,7 @@ Nuke is employed for image download and image cache handling.
 The project is designed for iOS, with a minimum deployment target of iOS 16.0.
 
 ## Project Structure
-.
+```bash
 ├── Cinematrix
 │   ├── Cinematrix.entitlements
 │   ├── CinematrixApp.swift
@@ -84,7 +84,7 @@ The project is designed for iOS, with a minimum deployment target of iOS 16.0.
 │       ├── LozalizableStrings.swift
 │       └── UserDefaultWrapper.swift
 └── README.md
-
+```
 ## Author
 Mateus Forgiarini da Silva
 mateusforgiarini@hotmail.com
